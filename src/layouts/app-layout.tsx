@@ -19,4 +19,6 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   )
 }
 
+AppLayout.displayName = 'AppLayout'
+
 export default AppLayout

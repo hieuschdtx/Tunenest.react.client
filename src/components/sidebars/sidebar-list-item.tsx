@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { twMerge } from 'tailwind-merge'
-import Icon from '../icon'
 import { IconType } from 'react-icons'
+
+import { Icon } from '@/components'
 
 type SidebarListItemProps = {
   icon: IconType
