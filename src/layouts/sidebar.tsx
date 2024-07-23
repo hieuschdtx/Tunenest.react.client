@@ -1,7 +1,7 @@
-import Box from '@/components/box'
-import SidebarNav from '@/components/sidebars/sidebar-nav'
+import { Box, SidebarNav } from '@/components'
+import React from 'react'
 
-const SideBar = () => {
+const SideBar: React.FC = () => {
   return (
     <div className="hidden md:flex flex-col gap-2 h-full w-sidebar-width">
       <SidebarNav />
@@ -9,5 +9,7 @@ const SideBar = () => {
     </div>
   )
 }
+
+SideBar.displayName = 'SideBar'
 
 export default SideBar
