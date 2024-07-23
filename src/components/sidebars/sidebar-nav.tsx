@@ -1,11 +1,10 @@
-import Box from '../box'
-import Logo from '../logo'
-import SidebarListItem from './sidebar-list-item'
 import { MdLibraryMusic } from 'react-icons/md'
 import { FaRegDotCircle } from 'react-icons/fa'
-import { LuPieChart } from 'react-icons/lu'
 import { HiMiniArrowTopRightOnSquare } from 'react-icons/hi2'
-import { usePathname } from '@/hooks/use-pathname'
+import { LuPieChart } from 'react-icons/lu'
+
+import { usePathname } from '@/hooks'
+import { Box, Logo, SidebarListItem } from '@/components'
 
 const dataNav = [
   {
@@ -57,5 +56,7 @@ const SidebarNav = () => {
     </Box>
   )
 }
+
+SidebarNav.displayName = 'SidebarNav'
 
 export default SidebarNav
